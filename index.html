@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempo — Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stopwatch">
+    <div class="brand"><span>◷</span> TEMPO</div>
+    <p class="eyebrow">MAKE EVERY SECOND COUNT</p>
+    <h1>Your moment. Your pace.</h1>
+    <p class="subtitle">A little focus starts here.</p>
+    <div class="clock" role="timer" aria-label="Elapsed time" aria-live="off">
+      <div><span id="time">00:00:00</span><span id="fraction">.00</span></div>
+      <p>HOURS &nbsp; / &nbsp; MINUTES &nbsp; / &nbsp; SECONDS</p>
+    </div>
+    <p id="status" class="status" role="status">Ready when you are</p>
+    <div class="controls">
+      <button id="reset" class="secondary" disabled>Reset</button>
+      <button id="start" class="primary">Start</button>
+      <button id="lap" class="secondary" disabled>Lap</button>
+    </div>
+    <section class="laps" aria-label="Lap times">
+      <header><h2>Lap times</h2><span id="lap-count">0 laps</span></header>
+      <p id="empty">Your laps will appear here.</p>
+      <ol id="lap-list"></ol>
+    </section>
+    <footer>Stay present. Keep going.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
